@@ -58,6 +58,19 @@ Person: {name, age, isMad} (
 
 mack: Person{name: "Mack", age: 23, isMad: true}
 mack.talk{} ! prints: "Get off my lawn."
+
+!inheritance:
+Builder: #Person {canWeFixIt} (  
+   build: (
+      if {canWeFixIt} (
+         print{"yes we can"}
+      )
+   )
+)
+
+bob: Builder{name: "Bob", age: 30, isMad: false, canWeFixIt: true}
+bob.build{} ! prints: "yes we can"
+bob.talk{}  ! prints "Howdy, neighbor!"
 ```
 ## Definitions
 To define something, use the ```:``` operator.
