@@ -6,8 +6,8 @@
 
 ! definitions:
 isMad: true
-count: 0
-sum: ~ 0
+immutableNumber: 12
+varyingSum: ~ 0
 peeps: ["yellow", "pink", "blue"]
 
 ! conditionals:
@@ -15,9 +15,9 @@ if {isMad} (
    "(╯°□°）╯︵ ┻━┻" 
 )
 
-if count = 0 (
+if immutableNumber = 0 (
    "nothing"
-) else if count = 1 (
+) else if immutableNumber = 1 (
    "something"
 ) else (
    "things"
