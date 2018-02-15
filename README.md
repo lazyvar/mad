@@ -96,3 +96,23 @@ coins: 7
 
 ## Objects
 
+## Constructors
+
+// an implict array is accessable via + prefix operator
+// save thing as an append
+constructor constructArray: [Int] = { 
+    +[1, 2, 3]
+    
+    if false {
+      +4
+    }
+    
+    +5
+    
+    for 6...7 {
+     +i
+    }
+}
+
+array: constructArray{}
+// array = [1, 2, 3, 5, 6, 7]
