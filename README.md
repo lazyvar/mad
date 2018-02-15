@@ -97,7 +97,7 @@ coins: 7
 ## Objects
 
 ## Constructors
-
+```
 // an implict array is accessable via + prefix operator
 // save thing as an append
 constructor constructArray: [Int] = { 
@@ -116,3 +116,4 @@ constructor constructArray: [Int] = {
 
 array: constructArray{}
 // array = [1, 2, 3, 5, 6, 7]
+```
